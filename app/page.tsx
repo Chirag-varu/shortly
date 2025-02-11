@@ -22,7 +22,7 @@ export default function Home() {
               We are the most straightforward URL shortener in the world. Most URL shorteners will track you or ask for your details to log in. We understand your needs, so we have created this URL shortener.
             </p>
             <div className="flex gap-3 flex-wrap justify-center">
-              <Link href="/shorten">
+              <Link href="/try">
                 <button className="bg-purple-500 rounded-lg shadow-lg px-4 py-2 font-bold text-white hover:bg-purple-600 transition">
                   Try Now
                 </button>

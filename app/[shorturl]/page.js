@@ -12,7 +12,7 @@ export default async function Page({ params }) {
   if (doc) {
     redirect(doc.url);
   } else {
-    redirect(`${process.env.NEXT_PUBLIC_HOST}`);
+    redirect(`${process.env.NEXT_PUBLIC_HOST}/page_not_found`);
   }
 
   return <div>My Post: {url}</div>;
