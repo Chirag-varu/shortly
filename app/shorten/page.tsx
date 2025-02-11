@@ -50,22 +50,6 @@ const Shorten = () => {
         }
     };
 
-    const shareLink = async (shortUrl: string) => {
-        if (navigator.share) {
-            try {
-                await navigator.share({
-                    title: "Check out this short link!",
-                    text: `Here's a short link for you: ${shortUrl}`,
-                    url: shortUrl,
-                });
-            } catch (err) {
-                console.error("Error sharing:", err);
-            }
-        } else {
-            alert("Your browser does not support sharing.");
-        }
-    };
-
     return (
         <div className="mx-auto max-w-md bg-white shadow-xl border border-gray-200 my-16 p-8 rounded-xl flex flex-col gap-6">
             <h1 className="font-extrabold text-3xl text-purple-700 text-center">Shorten Your URL</h1>
