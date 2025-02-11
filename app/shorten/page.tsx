@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Copy, Share2, ExternalLink } from "lucide-react"
+import { Copy, ExternalLink } from "lucide-react"
 
 
 const Shorten = () => {
