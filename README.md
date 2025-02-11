@@ -1,6 +1,7 @@
 # URL Shortener
 
 A simple and efficient URL shortener built with **Next.ts**.
+Most URL shorteners will track you or ask for your details to log in. We understand your needs, so we have created most straightforward URL shortener
 
 ## Features
 - Shorten long URLs into compact links
@@ -14,6 +15,8 @@ A simple and efficient URL shortener built with **Next.ts**.
 - **Database:** MongoDB (via Prisma)
 - **Hosting:** Vercel
 - **Styling:** Tailwind CSS
+
+## Live link: https://shortly-cv.vercel.app/shorten
 
 ## Getting Started
 
