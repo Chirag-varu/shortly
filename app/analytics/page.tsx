@@ -3,7 +3,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-const analytics  = () => {
+const Analytics  = () => {
   const [slug, setSlug] = useState("");
   const [clicks, setClicks] = useState<number | null>(null);
 
@@ -37,4 +37,4 @@ const analytics  = () => {
   );
 };
 
-export default analytics;
+export default Analytics;
