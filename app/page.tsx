@@ -12,7 +12,7 @@ const poppins = localFont({
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <main className="bg-purple-200 w-full md:px-8">
+      <main className="w-full md:px-8">
         <section className="grid h-[50vh] place-items-center">
           <div className="flex flex-col gap-4 items-center text-center">
             <p className={`text-2xl md:text-3xl lg:text-4xl font-bold ${poppins.className}`}>

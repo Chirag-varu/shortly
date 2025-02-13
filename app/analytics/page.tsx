@@ -29,7 +29,7 @@ const analytics  = () => {
         value={slug}
         onChange={(e) => setSlug(e.target.value)}
       />
-      <button className="bg-blue-500 text-white p-2 ml-2" onClick={fetchAnalytics}>
+      <button className="bg-purple-600 hover:bg-purple-700 transition-all duration-300 rounded-lg shadow-lg py-3 font-bold text-white text-lg" onClick={fetchAnalytics}>
         Get Analytics
       </button>
       {clicks !== null && <p className="mt-4">Total Clicks: {clicks}</p>}
