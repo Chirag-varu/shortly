@@ -32,7 +32,7 @@ export async function POST(request) {
     }
 
     // Insert the URL into the database
-    await collection.insertOne({ url: body.url, shorturl });
+    await collection.insertOne({ url: body.url, shorturl, clicks: 0 });
 
     return Response.json(
       {

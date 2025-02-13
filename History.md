@@ -1,5 +1,11 @@
 
-0.1.1 / 2010-11-08
+0.2.0 / 2025-13-08
+==================
+
+  *Added analytics for click view
+  *Fixed minor typo
+
+0.1.1 / 2025-11-08
 ==================
 
   *Added Customize 404 Not Found Page

@@ -10,6 +10,7 @@ export default async function Page({ params }) {
 
   const doc = await collection.findOne({ shorturl: shorturl });
   if (doc) {
+    await collection.updateOne({ shorturl: shorturl }, { $inc: { clicks: 1 } });
     redirect(doc.url);
   } else {
     redirect(`${process.env.NEXT_PUBLIC_HOST}/page_not_found`);

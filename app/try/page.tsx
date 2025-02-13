@@ -68,7 +68,7 @@ const Shorten = () => {
                     type="text"
                     value={shortUrl}
                     className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
-                    placeholder="Custom short URL (optional)"
+                    placeholder="Custom alias (optional)"
                     onChange={(e) => setShortUrl(e.target.value)}
                 />
 
