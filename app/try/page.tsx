@@ -5,7 +5,6 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Copy, ExternalLink } from "lucide-react"
 
-
 const Shorten = () => {
     const [url, setUrl] = useState("");
     const [shortUrl, setShortUrl] = useState("");
