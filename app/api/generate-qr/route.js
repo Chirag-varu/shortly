@@ -18,6 +18,7 @@ export async function GET(req) {
             headers: { "Content-Type": "application/json" },
         });
     } catch (error) {
+        console.error("Error in QR generating: ", error);
         return new Response(JSON.stringify({ error: "QR Code generation failed" }), {
             status: 500,
             headers: { "Content-Type": "application/json" },
