@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/api/analytics/[slug]/route.js", "app/Analytics"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/api/analytics/[slug]/route.js", "app/Analytics", "app/api/generate-qr/route.js"],
   "exclude": ["node_modules"]
 }
