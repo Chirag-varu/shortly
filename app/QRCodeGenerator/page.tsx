@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react';
+import Image from 'next/image';
 import axios from 'axios';
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -72,7 +73,8 @@ const QRCodeGenerator = () => {
                 {qrCode && (
                     <div className="flex flex-col items-center mt-6 gap-4">
                         {/* QR Code Image */}
-                        <img src={qrCode} alt="QR Code" className="shadow-lg border border-gray-300 rounded-lg" />
+                        {/* <img src={qrCode} alt="QR Code" className="shadow-lg border border-gray-300 rounded-lg" /> */}
+                        <Image src={qrCode} alt="QR Code" width={200} height={200} />
 
                         {/* Download Button */}
                         <Button onClick={downloadQRCode} variant="outline" className="w-full">
