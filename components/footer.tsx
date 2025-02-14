@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export function Footer() {
-    return ( 
+    return (
         <footer className="bg-gray-900 text-gray-400">
             <div className="max-w-7xl mx-auto py-12 px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -20,8 +20,7 @@ export function Footer() {
                             <ul className="mt-4 space-y-3">
                                 {[
                                     { href: "#features", label: "Features" },
-                                    { href: "#how-it-works", label: "How It Works" },
-                                    { href: "#pricing", label: "Pricing" }
+                                    { href: "#how-it-works", label: "How It Works" }
                                 ].map((link) => (
                                     <li key={link.href}>
                                         <Link href={link.href} className="hover:text-white transition">
@@ -36,14 +35,25 @@ export function Footer() {
                             <h3 className="text-sm font-semibold text-gray-300 tracking-wider uppercase">Support</h3>
                             <ul className="mt-4 space-y-3">
                                 {[
-                                    { href: "#documentation", label: "Documentation" },
-                                    { href: "#api", label: "API" },
-                                    { href: "#contact", label: "Contact" }
+                                    { href: "https://github.com/Chirag-varu/shortly", label: "Documentation", external: true },
+                                    { href: "#api", label: "API", external: false },
+                                    { href: "mailto:chiragvaru.main@gmail.com", label: "Contact", external: true }
                                 ].map((link) => (
                                     <li key={link.href}>
-                                        <Link href={link.href} className="hover:text-white transition">
-                                            {link.label}
-                                        </Link>
+                                        {link.external ? (
+                                            <a
+                                                href={link.href}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="hover:text-white transition"
+                                            >
+                                                {link.label}
+                                            </a>
+                                        ) : (
+                                            <Link href={link.href} className="hover:text-white transition">
+                                                {link.label}
+                                            </Link>
+                                        )}
                                     </li>
                                 ))}
                             </ul>
